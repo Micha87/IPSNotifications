@@ -1,0 +1,14 @@
+{
+	"id": "{F1AF3F8A-4420-476A-9DF0-B3B2EAC5154D}",
+	"name": "NotificationControl",
+	"type": 0,
+	"vendor": "",
+	"aliases": 
+	[
+		"Notification Control"
+	],
+	"parentRequirements": [],
+	"childRequirements": ["{BD3D39A7-877E-4116-9B86-53C6B827C918}", "{F79D2B31-49A9-498B-A26C-22CAB56C6852}"],
+	"implemented": ["{858A61A3-F139-4A08-97EB-B7F2BCA842B4}", "{DE2AA605-2595-432E-A6B1-E1C48DFB0D62}"],
+	"prefix": "NCTL"
+}

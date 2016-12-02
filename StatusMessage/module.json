@@ -1,0 +1,15 @@
+{
+	"id": "{DE9F7760-C60E-4138-B38A-11801F8878F7}",
+	"name": "StatusMessage",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"StatusMessage",
+                "Statusmeldung"
+	],
+	"parentRequirements": ["{858A61A3-F139-4A08-97EB-B7F2BCA842B4}"],
+	"childRequirements": [],
+	"implemented": ["{BD3D39A7-877E-4116-9B86-53C6B827C918}"],
+	"prefix": "STATEMSG"
+}

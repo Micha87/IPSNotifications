@@ -1,0 +1,15 @@
+{
+	"id": "{C936701E-D684-4659-934D-F1AE41370310}",
+	"name": "Subscription",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Abonnement",
+                "Subscription"
+	],
+	"parentRequirements": ["{DE2AA605-2595-432E-A6B1-E1C48DFB0D62}"],
+	"childRequirements": [],
+	"implemented": ["{F79D2B31-49A9-498B-A26C-22CAB56C6852}"],
+	"prefix": "SUBSCR"
+}
