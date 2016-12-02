@@ -40,7 +40,25 @@ __Konfigurationsseite__:
 
 Name                    | Beschreibung
 ----------------------- | ---------------------------------
-Button "Aktualisierung" | Neueinlesen aller Sensoren und erstellen der benötigten Ereignisse.
+Typ                     | Versandweg: Email, Push, WebFront, Skript 
+InstanzID               | ID der Sende-Instantz: SMTP (Email), WebFront Konfigurator (Push, WebFront), SkriptID (Skript)
+Timeout                 | Nur bei WebFront Notification: Zeit in Sekunden, nachdem die Benachrichtigung ausgelendet wird
+
+
+Wird der Typ *Skript* ausgewält stehen im aufgerufenen Skript folgende Variablen zum auslösenden Ereignis bereit:
+
+Variable                | Bedeutung                                     | Beispiel
+----------------------- | ----------------------------------------------- | ----------------
+    $_IPS[Title]        | Titel der auslösenden StatusMessage           | Batteriewächter
+    $_IPS[InstanceID]   | ID der auslösenden StatusMessage Instanz      | 23297
+    $_IPS[Icon]         | Icon der auslösenden Variable                 | Battery
+    $_IPS[VariableID]   | ID der auslösenden Variable                   | 43768
+    $_IPS[VariableValue]| Wert der auslösenden Variable                 | 1
+    $_IPS[Text]         | Text zusammengesetzt aus: *Pfad-Variablenname: Wert* | Haus - 1. Etage - Schlafzimmer - Heizung - Batterie: Batterie schwach
+    $_IPS[VariableValueFomatted] | Wert gemäß Variablenprofil der auslösenden Variablen | Batterie schwach
+    $_IPS[MediaID]      | ID zur MediaDatei für Soundausgabe |          12345
+
+
 
 ### 5. Statusvariablen und Profile
 

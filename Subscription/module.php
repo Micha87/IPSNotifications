@@ -11,6 +11,7 @@
                         $this->RegisterPropertyInteger("WebFrontID", 0);
                         $this->RegisterPropertyInteger("WebFrontTimeout", 0);
                         $this->RegisterPropertyInteger("SMTPID", 0);
+                        $this->RegisterPropertyInteger("ScriptID", 0);
                         $this->RegisterPropertyString("MailTo", '');
                         
                         $this->CreateVariableProfiles();
@@ -84,6 +85,7 @@
                     $mediaID = $data->Buffer->MediaID;
                     $icon = $data->Buffer->Icon;
                     //IPS_LogMessage("Subscription", print_r($data->Buffer, true));
+                    $data_array = get_object_vars($data->Buffer);
                     
                     $this->UpdateSubscriptions();
                     $active = GetValue($this->GetIDforIdent('Active'));
@@ -107,7 +109,7 @@
                                 $result = WFC_AudioNotification($this->ReadPropertyInteger('WebFrontID'), $title, $mediaID);
                                 break;
                             case 4:
-                                $result = IPS_RunScriptEx ( $this->ReadPropertyInteger('ScriptID'), $data);
+                                $result = IPS_RunScriptEx ( $this->ReadPropertyInteger('ScriptID'), $data_array);
                                 break;
 
                         }
