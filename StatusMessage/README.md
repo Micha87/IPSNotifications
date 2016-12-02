@@ -41,20 +41,20 @@ __Konfigurationsseite__:
 
 Name                    | Beschreibung
 ----------------------- | ---------------------------------
-**Typ**                     | Auswahl der zu überwachenden Variablen. Mögliche Typen: Variable, Variablenprofil
-**Typ Variablenprofil**
-* Kategorie              | Kategorie unter der (auch Unterkategorien) alle Variablen mit definiertem VariablenProfil überwacht werden.
-* Profil                  | Alle Variablen mit dem ausgewählten Profil werden überwacht.
-**Typ Variable**
-* Variable               | Variable, die überwacht werden soll
-**Bedingung**           
-* Bedingung               | Operator, der den Wert der Variablen mit dem Bedingungs-Wert vergleicht.
-* Wert                    | Wert der Bedingung
-* Checkbox                | Wenn ausgewält, werden alle Links zu überwachten Variablen versteckt, wenn die Bedingung nicht erfüllt ist.
-**Benachrichtigung**
-* Checkboxen | Wenn ausgewählt, wird eine Benachrichtigung versandt, sobald die Bedingung erfüllt ist bzw. nicht mehr erfüllt ist. Benachrichtigungen werden nur bei Änderung des Status versandt.
-* Titel                   | Titel der Benachrichtigung
-* Audiodatei              | MediaID, die eine Audio-Datei enthält. Diese kann z.B. für WebFront Audionotifications genutzt werden.
+**Typ**                 | Auswahl der zu überwachenden Variablen. Mögliche Typen: Variable, Variablenprofil
+**Typ Variablenprofil** |
+* Kategorie             | Kategorie unter der (auch Unterkategorien) alle Variablen mit definiertem VariablenProfil überwacht werden.
+* Profil                | Alle Variablen mit dem ausgewählten Profil werden überwacht.
+**Typ Variable**        |
+* Variable              | Variable, die überwacht werden soll
+**Bedingung**           |
+* Bedingung             | Operator, der den Wert der Variablen mit dem Bedingungs-Wert vergleicht.
+* Wert                  | Wert der Bedingung
+* Checkbox              | Wenn ausgewält, werden alle Links zu überwachten Variablen versteckt, wenn die Bedingung nicht erfüllt ist.
+**Benachrichtigung**    |
+* Checkboxen            | Wenn ausgewählt, wird eine Benachrichtigung versandt, sobald die Bedingung erfüllt ist bzw. nicht mehr erfüllt ist. Benachrichtigungen werden nur bei Änderung des Status versandt.
+* Titel                 | Titel der Benachrichtigung
+* Audiodatei            | MediaID, die eine Audio-Datei enthält. Diese kann z.B. für WebFront Audionotifications genutzt werden.
 
 
 ### 5. Statusvariablen und Profile
