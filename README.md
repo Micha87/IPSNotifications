@@ -45,7 +45,7 @@ Wenn eine Statusmeldung empfangen wird, sendet das Subscription Modul eine Benac
     * WebFront Audionitification
     * Skript
 
-[**Dokumentation Notification Subscription**](NotificationSubscription)
+[**Dokumentation Subscription**](Subscription)
 
 ### Notification Control
 * Empfängt Nachrichten der Status Module und leitet diese an die Abonnenten (Notification Subscription) weiter
