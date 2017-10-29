@@ -186,7 +186,7 @@
                     $data['VariableID'] = $SourceID;
                     $data['VariableValue'] = GetValue($SourceID);
                     
-                    $data['MediaID'] = $this->ReadPropertyString('MediaID');
+                    $data['MediaID'] = $this->ReadPropertyInteger('MediaID');
                     
                     $VariableProfile = @IPS_GetVariableProfile( $this->GetProfileName($SourceID) );
                     if ($VariableProfile){
