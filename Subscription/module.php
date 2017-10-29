@@ -103,7 +103,7 @@
                                 $result = WFC_PushNotification($this->ReadPropertyInteger('WebFrontID'), $title, $text, $sound, 0); //Sound: String, TargetID: Integer
                                 break;
                             case 2:
-                                $result = WFC_SendNotification($this->ReadPropertyInteger('WebFrontID'), $title, $text, $icon, $this->ReadPropertyString('WebFrontTimeout'));
+                                $result = WFC_SendNotification($this->ReadPropertyInteger('WebFrontID'), $title, $text, $icon, $this->ReadPropertyInteger('WebFrontTimeout'));
                                 break;
                             case 3:
                                 $result = WFC_AudioNotification($this->ReadPropertyInteger('WebFrontID'), $title, $mediaID);
