@@ -7,17 +7,17 @@
 			//Never delete this line!
 			parent::Create();
                         //$log = $this->CreateVariableByIdent($this->InstanceID, "Log", "Ereignisse", 3, "~String");
-                        $this->RegisterVariableInteger("Log","Ereignisse", "");
+                        
 		
 
                         // Create 'Log' Switch and activate logging
                         $vid = @IPS_GetObjectIDByIdent("Log", $this->InstanceID);  
                         if($vid === false){
                                 $vid = IPS_CreateVariable(3);
-                                //IPS_SetParent($vid, $this->InstanceID);
-                               // IPS_SetName($vid, "Ereignisse");
-                                //IPS_SetIdent($vid, "Log");
-                                //IPS_SetVariableCustomProfile($vid, "~String");
+                                IPS_SetParent($vid, $this->InstanceID);
+                               IPS_SetName($vid, "Ereignisse");
+                                IPS_SetIdent($vid, "Log");
+                                IPS_SetVariableCustomProfile($vid, "~String");
                                 IPS_SetIcon( $vid, 'Database');
                                 $archive = IPS_GetInstanceListByModuleID("{43192F0B-135B-4CE7-A0A7-1475603F3060}");
                                 AC_SetLoggingStatus($archive[0], $vid, true);
